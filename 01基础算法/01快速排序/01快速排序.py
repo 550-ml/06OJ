@@ -12,7 +12,7 @@ def quick_sort(num_list: List, left: int, right: int):
         return
     point_i = left - 1
     point_j = right + 1
-    point  = num_list[(left + right) // 2]
+    point = num_list[(left + right) // 2]
     while point_i < point_j:
         while True:
             point_i += 1
@@ -27,6 +27,7 @@ def quick_sort(num_list: List, left: int, right: int):
     quick_sort(num_list, left, point_j)
     quick_sort(num_list, point_j + 1, right)
 
+
 quick_sort(num_list, 0, n - 1)
 for i in range(n):
-    print(num_list[i], end=' ')
+    print(num_list[i], end=" ")
